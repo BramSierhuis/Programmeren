@@ -1,0 +1,7 @@
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\bin\Debug\Opdracht2.exe.config
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\bin\Debug\Opdracht2.exe
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\bin\Debug\Opdracht2.pdb
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\obj\Debug\Opdracht2.csproj.CoreCompileInputs.cache
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\obj\Debug\Opdracht2.exe
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\obj\Debug\Opdracht2.pdb
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht2\obj\Debug\Opdracht2.csprojResolveAssemblyReference.cache

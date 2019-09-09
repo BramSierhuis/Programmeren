@@ -1,0 +1,10 @@
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\bin\Debug\Opdracht4.exe.config
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\bin\Debug\Opdracht4.exe
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\bin\Debug\Opdracht4.pdb
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.csprojResolveAssemblyReference.cache
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.Form1.resources
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.Properties.Resources.resources
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.csproj.GenerateResource.cache
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.csproj.CoreCompileInputs.cache
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.exe
+C:\Users\Bram_Win10Edu\source\repos\Programmeren\Programmeren1\Opdrachten sequentie\Opdracht4\obj\Debug\Opdracht4.pdb
