@@ -144,33 +144,30 @@
             this.lblExBtw.AutoSize = true;
             this.lblExBtw.Location = new System.Drawing.Point(20, 179);
             this.lblExBtw.Name = "lblExBtw";
-            this.lblExBtw.Size = new System.Drawing.Size(35, 13);
+            this.lblExBtw.Size = new System.Drawing.Size(0, 13);
             this.lblExBtw.TabIndex = 11;
-            this.lblExBtw.Text = "label7";
             // 
             // lblBtw
             // 
             this.lblBtw.AutoSize = true;
             this.lblBtw.Location = new System.Drawing.Point(101, 179);
             this.lblBtw.Name = "lblBtw";
-            this.lblBtw.Size = new System.Drawing.Size(35, 13);
+            this.lblBtw.Size = new System.Drawing.Size(0, 13);
             this.lblBtw.TabIndex = 12;
-            this.lblBtw.Text = "label8";
             // 
             // lblIncBtw
             // 
             this.lblIncBtw.AutoSize = true;
             this.lblIncBtw.Location = new System.Drawing.Point(219, 179);
             this.lblIncBtw.Name = "lblIncBtw";
-            this.lblIncBtw.Size = new System.Drawing.Size(35, 13);
+            this.lblIncBtw.Size = new System.Drawing.Size(0, 13);
             this.lblIncBtw.TabIndex = 13;
-            this.lblIncBtw.Text = "label9";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(314, 234);
             this.Controls.Add(this.lblIncBtw);
             this.Controls.Add(this.lblBtw);
             this.Controls.Add(this.lblExBtw);

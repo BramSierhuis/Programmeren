@@ -24,14 +24,9 @@ namespace Opdracht4
             double btw = Math.Round(prijs * 0.21, 2);
             double totaal = Math.Round(btw + prijs, 2);
 
-            lblPrijs.Text = prijs.ToString();
-            lblBtw.Text = btw.ToString();
-            lblTotaal.Text = totaal.ToString();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            lblPrijs.Text = prijs.ToString(".00");
+            lblBtw.Text = btw.ToString(".00");
+            lblTotaal.Text = totaal.ToString(".00");
         }
     }
 }
