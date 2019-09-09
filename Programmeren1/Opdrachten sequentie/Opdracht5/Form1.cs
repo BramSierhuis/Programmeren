@@ -25,12 +25,15 @@ namespace Opdracht5
 
         private void btnBereken_Click(object sender, EventArgs e)
         {
+            //Lees de getallen uit de tekstvakken uit
             double getal1 = double.Parse(txtGetal1.Text, CultureInfo.InvariantCulture);
             double getal2 = double.Parse(txtGetal2.Text, CultureInfo.InvariantCulture);
             double getal3 = double.Parse(txtGetal3.Text, CultureInfo.InvariantCulture);
 
+            //Bereken het gemiddelde
             double gemiddelde = (getal1 + getal2 + getal3) / 3;
 
+            //Geef de berekende waarde weer
             lblGemiddelde.Text = gemiddelde.ToString();
         }
     }
