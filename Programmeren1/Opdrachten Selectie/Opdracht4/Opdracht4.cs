@@ -20,7 +20,7 @@ namespace Opdracht4
             int number3 = int.Parse(Console.ReadLine());
 
             int som = number1 + number2 + number3;
-            double gemiddelde = som / 3;
+            double gemiddelde = som / 3.00;
             int product = number1 * number2 * number3;
             int grootste = 0;
             int kleinste = 0;
@@ -52,15 +52,18 @@ namespace Opdracht4
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Hey! You didn't make my creator teach me how to handle this input!");
                 Console.WriteLine("Im lazy so i'll just display some 0's");
-                return;
             }
 
+            Console.WriteLine();
+
             Console.WriteLine("sum = " + som);
-            Console.WriteLine("gemiddelde = " + gemiddelde);
+            Console.WriteLine("gemiddelde = " + gemiddelde.ToString(".00"));
             Console.WriteLine("product = " + product);
-            Console.WriteLine("hoogste = " + grootste);
+            Console.WriteLine("grootste = " + grootste);
+            Console.WriteLine("kleinste = " + kleinste);
             Console.ReadKey();
         }
     }

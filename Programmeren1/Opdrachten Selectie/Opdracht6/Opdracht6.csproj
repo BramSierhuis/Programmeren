@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4D8E6B0-6A1A-4561-952A-87884AE9D129}</ProjectGuid>
+    <ProjectGuid>{51DA6CC6-4898-46B5-AB7F-5538DDA80120}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Opdracht4</RootNamespace>
-    <AssemblyName>Opdracht4</AssemblyName>
+    <RootNamespace>Opdracht6</RootNamespace>
+    <AssemblyName>Opdracht6</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Opdracht4.cs" />
+    <Compile Include="Opdracht6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
