@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opdracht1", "Opdracht1\Opdracht1.csproj", "{C1560A9F-E6D0-422F-BE95-BE6A2E433F58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht2", "Opdracht2\Opdracht2.csproj", "{81C9074A-2CDD-40C0-A2A6-527AD2DDBFFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opdracht2", "Opdracht2\Opdracht2.csproj", "{81C9074A-2CDD-40C0-A2A6-527AD2DDBFFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht3", "Opdracht3\Opdracht3.csproj", "{48874BEE-A870-4807-B28A-4DC48D9F8B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opdracht3", "Opdracht3\Opdracht3.csproj", "{48874BEE-A870-4807-B28A-4DC48D9F8B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opdracht4", "Opdracht4\Opdracht4.csproj", "{EC6943D6-A2FB-418B-909B-2BDF61718038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{48874BEE-A870-4807-B28A-4DC48D9F8B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48874BEE-A870-4807-B28A-4DC48D9F8B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48874BEE-A870-4807-B28A-4DC48D9F8B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6943D6-A2FB-418B-909B-2BDF61718038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6943D6-A2FB-418B-909B-2BDF61718038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6943D6-A2FB-418B-909B-2BDF61718038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6943D6-A2FB-418B-909B-2BDF61718038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
