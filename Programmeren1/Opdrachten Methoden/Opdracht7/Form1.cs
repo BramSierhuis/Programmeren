@@ -25,7 +25,7 @@ namespace Opdracht7
                 CelciusToKelvin(ref graden);
             else if (rBtnCtoF.Checked)
                 CelciusToFahrenheid(ref graden);
-            else if (rBtnFtoC.Checked)
+            else
                 FahrenheidToCelcius(ref graden);
 
             lblUitkomst.Text = graden.ToString("0.00");
