@@ -28,6 +28,8 @@ namespace Opgave1
             else
                 Console.WriteLine("{0}, je hebt (nog) niet genoeg EC's gehaald om naar jaar 2 te mogen", naam);
 
+            Console.WriteLine();
+            Console.WriteLine("Einde programma");
             Console.ReadKey();
         }
     }
