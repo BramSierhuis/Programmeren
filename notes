@@ -1,0 +1,12 @@
+Een methode heeft slechts 1 taak en is maximaal 30 lines
+Weg met static 
+Main(){
+	Program myProgram = new Program();
+	myProgram.Start();
+	
+	void Start(){}
+}
+
+Zet enums in apart file
+
+maak voor elke enum een set en een get methode
