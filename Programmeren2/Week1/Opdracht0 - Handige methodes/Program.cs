@@ -34,6 +34,7 @@ namespace Opdracht0___Handige_methodes
 
         string LeesString(string vraag)
         {
+            Console.Write(vraag);
             string input = Console.ReadLine();
 
             return input;
