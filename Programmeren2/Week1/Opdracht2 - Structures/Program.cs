@@ -10,6 +10,8 @@ namespace Opdracht2___Structures
         {
             Program myProgram = new Program();
             myProgram.Start();
+
+            Console.ReadLine();
         }
 
         void Start()
@@ -27,7 +29,6 @@ namespace Opdracht2___Structures
             }
 
             VierVerjaardag(ref personen[2]);
-
             PrintPersoon(personen[2]);
         }
 
@@ -39,7 +40,7 @@ namespace Opdracht2___Structures
             p.Achternaam = LeesString("Geef achternaam: ");
             p.Leeftijd = LeesInt("Geef leeftijd: ");
             p.Woonplaats = LeesString("Geef woonplaats: ");
-            p.Geslacht = LeesGeslacht("Geef het geslacht: (m/v)");
+            p.Geslacht = LeesGeslacht("Geef het geslacht: (m/v) ");
 
             return p;
         }
@@ -97,7 +98,7 @@ namespace Opdracht2___Structures
 
         void VierVerjaardag(ref Persoon jarige)
         {
-            Console.WriteLine("Verjaardag vieren van " + jarige.Voornaam + " " + jarige.Achternaam);
+            Console.WriteLine("Verjaardag vieren van " + jarige.Voornaam + " " + jarige.Achternaam + "...");
             jarige.Leeftijd++;
         }
     }
