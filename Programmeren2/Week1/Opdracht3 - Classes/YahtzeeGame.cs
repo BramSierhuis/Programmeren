@@ -7,6 +7,7 @@ namespace Opdracht3___Classes
     class YahtzeeGame
     {
         Dobbelsteen[] dobbelstenen = new Dobbelsteen[5];
+
         public void Init()
         {
             for(int i = 0; i < dobbelstenen.Length; i++)
