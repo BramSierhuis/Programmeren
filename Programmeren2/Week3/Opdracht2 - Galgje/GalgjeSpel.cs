@@ -27,7 +27,6 @@ namespace Opdracht2___Galgje
             if (geheimWoord.Contains(letter))
             {
                 StringBuilder temp = new StringBuilder(geradenWoord);
-
                 for (int i = 0; i < geradenWoord.Length; i++)
                 {
                     if (geheimWoord[i] == letter)
@@ -44,10 +43,7 @@ namespace Opdracht2___Galgje
 
         public bool IsGeraden()
         {
-            if (geradenWoord == geheimWoord)
-                return true;
-
-            return false;
+            return geradenWoord == geheimWoord;
         }
     }
 }

@@ -85,10 +85,7 @@ namespace Opdracht2___Galgje
                 Console.WriteLine("Aantal resterende pogingen: " + pogingen);    
             }
 
-            if (spel.IsGeraden())
-                return true;
-
-            return false;
+            return spel.IsGeraden();
         }
 
         string SelecteerWoord(List<string> woorden)
