@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTools", "MyTools\MyTools.csproj", "{A23364D6-596B-467E-B416-2BF32C774327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTools", "MyTools\MyTools.csproj", "{A23364D6-596B-467E-B416-2BF32C774327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToolsApplication", "MyToolsApplication\MyToolsApplication.csproj", "{577A5B59-0345-420B-9A53-191C94604549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyToolsApplication", "MyToolsApplication\MyToolsApplication.csproj", "{577A5B59-0345-420B-9A53-191C94604549}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opdracht2 - Candy Crush Logica", "Opdracht2 - Candy Crush Logica\Opdracht2 - Candy Crush Logica.csproj", "{4BDBE0AC-26F6-46A5-80D1-7BA0789A961C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandyCrushLogica", "CandyCrushLogica\CandyCrushLogica.csproj", "{00F95624-1D39-4775-B582-2E1F9BA2A8F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{577A5B59-0345-420B-9A53-191C94604549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577A5B59-0345-420B-9A53-191C94604549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577A5B59-0345-420B-9A53-191C94604549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDBE0AC-26F6-46A5-80D1-7BA0789A961C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDBE0AC-26F6-46A5-80D1-7BA0789A961C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDBE0AC-26F6-46A5-80D1-7BA0789A961C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDBE0AC-26F6-46A5-80D1-7BA0789A961C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F95624-1D39-4775-B582-2E1F9BA2A8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F95624-1D39-4775-B582-2E1F9BA2A8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F95624-1D39-4775-B582-2E1F9BA2A8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F95624-1D39-4775-B582-2E1F9BA2A8F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
