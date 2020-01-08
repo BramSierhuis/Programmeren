@@ -19,6 +19,8 @@ namespace Opdracht___Chess
 
             InitChessboard(ref chessboard);
             DisplayChessboard(chessboard);
+
+            PlayChess(chessboard);
         }
 
         void InitChessboard(ref ChessPiece[,] chessboard)
@@ -99,7 +101,83 @@ namespace Opdracht___Chess
 
         void PlayChess(ChessPiece[,] chessBoard)
         {
-            
+            while (true)
+            {
+                Console.WriteLine();
+                Position from = ReadPosition("What piece do you want to move? ");
+                Position to = ReadPosition("Where do you want to move it to? ");
+                Console.WriteLine();
+
+                try
+                {
+                    CheckMove(chessBoard, from, to);
+                    DoMove(ref chessBoard, from, to);
+                    DisplayChessboard(chessBoard);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+        }
+
+        void CheckMove(ChessPiece[,] chessboard, Position from, Position to)
+        {
+            if (chessboard[from.row, from.column] == null)
+                throw new Exception("No chesspiece at from-position");
+            else if (chessboard[to.row, to.column] != null)
+                throw new Exception("There already is a chesspiece at to-position");
+            else if (!ValidMove(chessboard[from.row, from.column], from, to))
+            {
+                ChessPieceType type = chessboard[from.row, from.column].type;
+                throw new Exception("The " + type.ToString() + " can't move in such a way");
+            }
+        }
+
+        void DoMove(ref ChessPiece[,] chessboard, Position from, Position to)
+        {
+            chessboard[to.row, to.column] = chessboard[from.row, from.column];
+            chessboard[from.row, from.column] = null;
+        }
+
+        bool ValidMove(ChessPiece chessPiece, Position from, Position to)
+        {
+            int ver = Math.Abs(to.row - from.row);
+            int hor = Math.Abs(to.column - from.column);
+            ChessPieceType type = chessPiece.type;
+
+            if (hor + ver == 0)
+                return false;
+
+            switch (type)
+            {
+                case ChessPieceType.Rook:
+                    if (hor * ver == 0)
+                        return true;
+                    return false;
+                case ChessPieceType.Knight:
+                    if (hor * ver == 2)
+                        return true;
+                    return false;
+                case ChessPieceType.Bishop:
+                    if (hor == ver)
+                        return true;
+                    return false;
+                case ChessPieceType.King:
+                    if ((hor == 1 || ver == 1) || (hor==1&&ver==1))
+                        return true;
+                    return false;
+                case ChessPieceType.Queen:
+                    if (hor * ver == 0 || hor == ver)
+                        return true;
+                    return false;
+                case ChessPieceType.Pawn:
+                    if (hor == 0 && ver == 1)
+                        return true;
+                    return false;
+                default:
+                    return false;
+            }
         }
 
         Position ReadPosition(string question)
