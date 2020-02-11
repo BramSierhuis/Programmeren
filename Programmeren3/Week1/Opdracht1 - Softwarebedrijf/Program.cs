@@ -14,11 +14,16 @@ namespace Opdracht1___Softwarebedrijf
 
         void Start()
         {
-            Programmer nick = new Programmer("Nick", Enums.Specialty.Csharp);
-            Programmer jake = new Programmer("Jake", Enums.Specialty.HTML);
-            Programmer bram = new Programmer("Bram", Enums.Specialty.Java);
+            Programmer nick = new Programmer("Nick", Specialty.Csharp);
+            Programmer jake = new Programmer("Jake", Specialty.HTML);
+            Programmer bram = new Programmer("Bram", Specialty.Java);
 
-            
+            Team team = new Team();
+            team.AddProgrammer(nick);
+            team.AddProgrammer(jake);
+            team.AddProgrammer(bram);
+
+            team.PrintAllTeamMembers();
         }
     }
 }

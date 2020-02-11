@@ -4,12 +4,18 @@ using System.Text;
 
 namespace Opdracht1___Softwarebedrijf
 {
-    class Programmer
+    public class Programmer
     {
         string name;
-        Enums.Specialty specialty;
+        Specialty specialty;
 
-        public Programmer(string name, Enums.Specialty specialty)
+        public Programmer(string name)
+        {
+            this.name = name;
+            specialty = Specialty.Unknown;
+        }
+
+        public Programmer(string name, Specialty specialty)
         {
             this.name = name;
             this.specialty = specialty;

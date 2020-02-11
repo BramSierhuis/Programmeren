@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Opdracht1___Softwarebedrijf
 {
-    class Team
+    public class Team
     {
         List<Programmer> programmers;
 
@@ -16,6 +16,14 @@ namespace Opdracht1___Softwarebedrijf
         public void AddProgrammer(Programmer p)
         {
             programmers.Add(p);
+        }
+
+        public void PrintAllTeamMembers()
+        {
+            foreach (Programmer p in programmers)
+            {
+                p.Print();
+            }
         }
     }
 }
