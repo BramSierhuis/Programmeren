@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Opdracht1___Boekhandel
 {
-    public class Item
+    public abstract class Item
     {
         public string title;
         public double price;
