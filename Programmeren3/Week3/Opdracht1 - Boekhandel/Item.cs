@@ -9,11 +9,12 @@ namespace Opdracht1___Boekhandel
         public string Title { get; set; }
         public double Price { get; set; }
         public int Count { get; set; }
+
         public double TotalPrice 
         {
             get 
             {
-                return Price;
+                return Price * Count;
             } 
         }
 
@@ -21,10 +22,7 @@ namespace Opdracht1___Boekhandel
         {
             Title = title;
             Price = price;
-            Count++;
         }
-
-        ~Item
 
         public virtual void Print() { }
     }
