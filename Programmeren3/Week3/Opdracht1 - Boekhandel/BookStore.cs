@@ -20,6 +20,7 @@ namespace Opdracht1___Boekhandel
             foreach(Item item in collection)
             {
                 item.Print();
+                total += item.TotalPrice;
             }
 
             Console.WriteLine();

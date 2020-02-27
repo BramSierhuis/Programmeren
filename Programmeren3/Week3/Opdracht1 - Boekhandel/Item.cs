@@ -18,10 +18,11 @@ namespace Opdracht1___Boekhandel
             } 
         }
 
-        public Item(string title, double price)
+        public Item(string title, double price, int count)
         {
             Title = title;
             Price = price;
+            Count = count;
         }
 
         public virtual void Print() { }

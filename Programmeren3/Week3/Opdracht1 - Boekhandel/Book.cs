@@ -8,7 +8,7 @@ namespace Opdracht1___Boekhandel
     {
         public string Author { get; }
 
-        public Book(string title, string author, double price) : base(title, price)
+        public Book(string title, string author, double price, int count) : base(title, price, count)
         {
             Author = author;
         }

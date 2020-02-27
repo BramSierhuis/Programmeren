@@ -8,7 +8,7 @@ namespace Opdracht1___Boekhandel
     {
         Enums.Days ReleaseDay { get; set; }
 
-        public Magazine(string title, Enums.Days releaseDay, double price) : base(title, price)
+        public Magazine(string title, Enums.Days releaseDay, double price, int count) : base(title, price, count)
         {
             ReleaseDay = releaseDay;
         }
