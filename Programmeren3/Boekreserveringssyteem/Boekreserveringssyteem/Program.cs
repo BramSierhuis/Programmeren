@@ -17,6 +17,8 @@ namespace ConsoleForSystem
         void Start()
         {
             CustomerDAO customerDAO = new CustomerDAO();
+            BookDAO bookDAO = new BookDAO();
+            ReservationDAO reservationDAO = new ReservationDAO();
 
             foreach (Customer c in customerDAO.GetAll())
                 Console.WriteLine(c);
@@ -28,6 +30,36 @@ namespace ConsoleForSystem
                 Console.WriteLine(customer);
             else
                 Console.WriteLine("Customer not found");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            foreach (Book b in bookDAO.GetAll())
+                Console.WriteLine(b);
+
+            Console.WriteLine();
+
+            Book book = bookDAO.GetById(2);
+            if(book != null)
+                Console.WriteLine(book);
+            else
+                Console.WriteLine("Book not found");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            foreach (Reservation r in reservationDAO.GetAll())
+                Console.WriteLine(r);
+
+            Console.WriteLine();
+
+            foreach (Reservation r in reservationDAO.GetAllForCustomer(customer))
+                Console.WriteLine(r);
+
+            Console.WriteLine();
+
+            foreach (Reservation r in reservationDAO.GetAllForBook(book))
+                Console.WriteLine(r);
         }
     }
 }
