@@ -83,25 +83,6 @@ namespace DAL
             return reservations;
         }
 
-        private Customer ReadCustomer(SqlDataReader reader)
-        {
-            int id = (int)reader["id"];
-            string firstName = (string)reader["FirstName"];
-            string lastName = (string)reader["LastName"];
-            string emailAddress = (string)reader["EmailAddress"];
-
-            return new Customer(id, firstName, lastName, emailAddress);
-        }
-
-        private Book ReadBook(SqlDataReader reader)
-        {
-            int id = (int)reader["id"];
-            string author = (string)reader["Author"];
-            string title = (string)reader["Title"];
-
-            return new Book(id, title, author);
-        }
-
         private Reservation ReadReservation(SqlDataReader reader)
         {
             int id = (int)reader["Id"];
