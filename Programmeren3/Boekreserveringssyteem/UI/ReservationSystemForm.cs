@@ -16,5 +16,23 @@ namespace UI
         {
             InitializeComponent();
         }
+
+        private void customersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CustomersForm form = new CustomersForm();
+            form.Show();
+        }
+
+        private void booksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BooksForm form = new BooksForm();
+            form.Show();
+        }
+
+        private void reservationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReservationsForm form = new ReservationsForm();
+            form.Show();
+        }
     }
 }
