@@ -6,7 +6,7 @@ namespace Opdracht_2
 {
     public class ArrayStack : IStack
     {
-        private int?[] stack; //Im using a nullable array because it can be filed with 0's
+        private int?[] stack; //Im using a nullable array because the array can be filed with 0's
         private int size;
         public int index = 0;
 
