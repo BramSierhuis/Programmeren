@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Opdracht_1
+namespace Programmeren3opgaven
 {
     class Program
     {
@@ -52,6 +52,7 @@ namespace Opdracht_1
 
         private void Opgave3()
         {
+            //Dit is natuurlijk herhalende code, maar gezien de opdrachten los van elkaar staan maak ik dit ook los
             List<FootballPlayer> players = new List<FootballPlayer>();
 
             InternationalPlayer player1 = new InternationalPlayer("Donny van der Beek", 23, 9);
