@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Opdracht_1
 {
-    public enum KnockoutType
+    public enum TeamType
     {
-        QuarterFinal, SemiFinal, Final
+        HomeTeam, AwayTeam
     }
 }

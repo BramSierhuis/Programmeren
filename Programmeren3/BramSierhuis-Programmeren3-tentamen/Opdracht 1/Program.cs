@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Programmeren3opgaven
+namespace Opdracht_1
 {
     class Program
     {
@@ -15,11 +15,21 @@ namespace Programmeren3opgaven
 
         private void Start()
         {
+            Console.WriteLine("Opgave 1: ---------------");
             Opgave1();
-            Console.WriteLine("---------------");
+            Console.WriteLine();
+
+            Console.WriteLine("Opgave 2: ---------------");
             Opgave2();
-            Console.WriteLine("---------------");
+            Console.WriteLine();
+
+            Console.WriteLine("Opgave 3: ---------------");
             Opgave3();
+            Console.WriteLine();
+            
+            Console.WriteLine("Opgave 5: ---------------");
+            Opgave5();
+            Console.WriteLine();
         }
 
         private void Opgave1()
@@ -69,6 +79,21 @@ namespace Programmeren3opgaven
             FootballTeam team = new FootballTeam("Ajax", players);
 
             Console.WriteLine("Total transfervalue: " + team.TotalTransferValue + "m");
+        }
+
+        private void Opgave5()
+        {
+            FootballMatchResult result1 = new FootballMatchResult(2, 1);
+            FootballMatchResult result2 = new FootballMatchResult(3, 3);
+            FootballMatchResult result3 = new FootballMatchResult(1, 5);
+
+            result1.Print();
+            Console.WriteLine();
+
+            result2.Print();
+            Console.WriteLine();
+
+            result3.Print();
         }
     }
 }

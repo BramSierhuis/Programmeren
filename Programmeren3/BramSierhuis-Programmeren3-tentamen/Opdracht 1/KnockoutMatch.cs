@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Programmeren3opgaven
+namespace Opdracht_1
 {
     public class KnockoutMatch : ChampionshipMatch
     {
