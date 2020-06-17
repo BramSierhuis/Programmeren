@@ -6,8 +6,8 @@ namespace Opdracht_1
 {
     public abstract class FootballMatch
     {
-        private FootballTeam homeTeam;
-        private FootballTeam awayTeam;
+        public FootballTeam homeTeam;
+        public FootballTeam awayTeam;
 
         public FootballMatch(FootballTeam homeTeam, FootballTeam awayTeam)
         {

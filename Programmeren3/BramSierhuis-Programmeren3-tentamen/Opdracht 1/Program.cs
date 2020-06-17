@@ -30,6 +30,10 @@ namespace Opdracht_1
             Console.WriteLine("Opgave 5: ---------------");
             Opgave5();
             Console.WriteLine();
+            
+            Console.WriteLine("Opgave 6: ---------------");
+            Opgave6();
+            Console.WriteLine();
         }
 
         private void Opgave1()
@@ -94,6 +98,42 @@ namespace Opdracht_1
             Console.WriteLine();
 
             result3.Print();
+        }
+
+        private void Opgave6()
+        {
+            List<FootballPlayer> team1players = new List<FootballPlayer>();
+            List<FootballPlayer> team2players = new List<FootballPlayer>();
+            List<FootballPlayer> team3players = new List<FootballPlayer>();
+            List<FootballPlayer> team4players = new List<FootballPlayer>();
+
+            List<FootballTeam> teams = new List<FootballTeam>();
+
+            team1players.Add(new InternationalPlayer("Donny van der Beek", 23, 9));
+            team1players.Add(new InternationalPlayer("Hakim Ziyech", 27, 32));
+
+            team2players.Add(new FootballPlayer("Merle Maat", 18));
+            team2players.Add(new FootballPlayer("Bram Sierhuis", 19));
+
+            team3players.Add(new InternationalPlayer("Tymo Verpoort", 24, 2));
+            team3players.Add(new InternationalPlayer("Jake Jackson", 21, 10));
+
+            team4players.Add(new FootballPlayer("Jacq de Vries", 18));
+            team4players.Add(new FootballPlayer("Anne de Groot", 19));
+
+            FootballTeam team1 = new FootballTeam("Ajax", team1players);
+            FootballTeam team2 = new FootballTeam("PSV", team2players);
+            FootballTeam team3 = new FootballTeam("Feynoord", team3players);
+            FootballTeam team4 = new FootballTeam("AZ", team4players);
+
+            teams.Add(team1);
+            teams.Add(team2);
+            teams.Add(team3);
+            teams.Add(team4);
+
+            Competition competition = new Competition(teams);
+
+            competition.Print();
         }
     }
 }
