@@ -48,11 +48,11 @@ namespace Opdracht_1
                     if (team1 != team2)
                     {
                         counter++;
-                        FootballMatch homeMatch = new CompetitionMatch(team1, team2, counter);
+                        CompetitionMatch homeMatch = new CompetitionMatch(team1, team2, counter);
                         matches.Add(homeMatch);
 
                         counter++;
-                        FootballMatch awayMatch = new CompetitionMatch(team2, team1, counter);
+                        CompetitionMatch awayMatch = new CompetitionMatch(team2, team1, counter);
                         matches.Add(awayMatch);
 
                         //Fill results
