@@ -14,16 +14,16 @@ namespace Opdracht3
 
         private void Start()
         {
-            StemSysteem stemSysteem1 = StemSysteem.GetInstance();
+            StemSysteem stemSysteem1 = StemSysteem.Instance;
             stemSysteem1.Stem("Bram", true);
             stemSysteem1.Stem("Jake", true);
             stemSysteem1.Stem("Klaas", false);
 
-            StemSysteem stemSysteem2 = StemSysteem.GetInstance();
-            stemSysteem1.Stem("Mark", false);
+            StemSysteem stemSysteem2 = StemSysteem.Instance;
+            stemSysteem2.Stem("Mark", false);
 
-            stemSysteem1.Stem("Jake", true);
-            stemSysteem1.Stem("Klaas", false);
+            stemSysteem2.Stem("Jake", true);
+            stemSysteem2.Stem("Klaas", false);
         }
     }
 }

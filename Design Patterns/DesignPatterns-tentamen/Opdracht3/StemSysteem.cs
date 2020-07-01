@@ -8,6 +8,21 @@ namespace Opdracht3
     {
         private static StemSysteem instance;
 
+        public static StemSysteem Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new StemSysteem();
+
+                return instance;
+            }
+            set
+            {
+                instance = value;
+            }
+        }
+
         private List<string> tegenStemmers = new List<string>();
         private List<string> voorStemmers = new List<string>();
 
@@ -36,14 +51,6 @@ namespace Opdracht3
                 return true;
 
             return false;
-        }
-
-        public static StemSysteem GetInstance()
-        {
-            if (instance == null)
-                instance = new StemSysteem();
-
-            return instance;
         }
     }
 }

@@ -9,5 +9,6 @@ namespace Opdracht4
         void UpdateDateTime();
         void RegisterObserver(IClockObserver display);
         void RemoveObserver(IClockObserver display);
+        void NotifyObservers(); //Ik heb er voor gekozen deze functie uit de UpdateDateTime functie te halen
     }
 }

@@ -6,14 +6,18 @@ namespace Opdracht4
 {
     public class ClockDisplay : IClockObserver
     {
-        private int id;
+        private int id; //Wordt gebruikt om bij te houden welk dipslay er toont
+        private IClockSystem klok; //Zou weggelaten kunnen worden gezien deze nu enkel in de constructor gebruikt wordt
 
-        public ClockDisplay(int id)
+        public ClockDisplay(int id, IClockSystem klok)
         {
             this.id = id;
+            this.klok = klok;
+
+            this.klok.RegisterObserver(this);
         }
 
-        public void UpdateDisplay(DateTime time)
+        public void Update(DateTime time)
         {
             Console.WriteLine("[display {0}] current time: {1}", id, time.TimeOfDay);
         }

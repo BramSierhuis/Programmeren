@@ -21,7 +21,6 @@ namespace Opdracht1
             Console.WriteLine("[database data]");
             DataVerwerker databaseVerwerker = new DatabaseDataVerwerker();
             databaseVerwerker.VerwerkData();
-            Console.ReadKey();
         }
     }
 }

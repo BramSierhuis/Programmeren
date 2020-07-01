@@ -6,7 +6,7 @@ namespace Opdracht2
 {
     public abstract class PersoneelsLid
     {
-        string naam;
+        private string naam;
         public IBetaalWijze BetaalWijze { get; set; }
 
         public PersoneelsLid(string naam)

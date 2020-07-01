@@ -21,9 +21,9 @@ namespace Opdracht4
             IClockController controller = new ClockController(clock);
 
             // maak een paar displays aan
-            clock.RegisterObserver(new ClockDisplay(1));
-            clock.RegisterObserver(new ClockDisplay(2));
-            clock.RegisterObserver(new ClockDisplay(3));
+            ClockDisplay display1 = new ClockDisplay(1, clock);
+            ClockDisplay display2 = new ClockDisplay(2, clock);
+            ClockDisplay display3 = new ClockDisplay(3, clock);
 
             // update de klok een paar keer
             controller.UpdateDateTime();

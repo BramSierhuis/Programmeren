@@ -6,6 +6,6 @@ namespace Opdracht4
 {
     public interface IClockObserver
     {
-        void UpdateDisplay(DateTime time);
+        void Update(DateTime time);
     }
 }

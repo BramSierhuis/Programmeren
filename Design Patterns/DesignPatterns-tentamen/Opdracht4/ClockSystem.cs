@@ -6,7 +6,7 @@ namespace Opdracht4
 {
     public class ClockSystem : IClockSystem
     {
-        private List<IClockObserver> clockDisplays = new List<IClockObserver>();
+        private List<IClockObserver> displays = new List<IClockObserver>();
 
         private DateTime currentDateTime;
         public DateTime CurrentDateTime
@@ -17,20 +17,27 @@ namespace Opdracht4
 
         public void RegisterObserver(IClockObserver display)
         {
-            clockDisplays.Add(display);
+            displays.Add(display);
         }
 
         public void RemoveObserver(IClockObserver display)
         {
-            clockDisplays.Remove(display);
+            displays.Remove(display);
+        }
+
+        public void NotifyObservers() //Ik heb er voor gekozen deze functie uit de UpdateDateTime functie te halen
+        {
+            foreach (IClockObserver display in displays)
+            {
+                display.Update(DateTime.Now);
+            }
         }
 
         public void UpdateDateTime()
         {
-            foreach(IClockObserver display in clockDisplays)
-            {
-                display.UpdateDisplay(DateTime.Now);
-            }
+            currentDateTime = DateTime.Now;
+
+            NotifyObservers();
         }
     }
 }
